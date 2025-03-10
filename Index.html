@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanssskuy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> ABOUT ME</a></li>       
+            <li><a href="#business"><i class="fas fa-briefcase"></i> BUSINESS</a></li>
+            <li><a href="#contact"><i class="fas fa-phone"></i> CONTACTS</a></li>
+        </ul>
+    </nav>
+    
+    <header id="home">
+        <h1 class="title">Helooo There <span>&#128075;</span></h1>
+        <p class="subtitle">I'm Arnolt, I'm a Business Developer</p>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h1>- ABOUT ME -</h1>
+            <div class="content">
+                <div class="text">
+                    <p class="greeting">Hellooo There!</p>
+                    <p>My name is Arnolt Arfa Nugraha, also known as "Arnolt". I’m a student at SMK TELKOM PURWOKERTO, and I am the owner of AVTRADE GAME business.</p>
+                </div>
+                <div class="image">
+                    <img src="About Me.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="business">
+        <div class="container">
+            <h1>- BUSINESS -</h1>
+            <div class="content">
+                <div class="text">
+                    <p class="sub-title">My Business</p>
+                    <p>AVTRADE GAME is a business that I created. This business sells gaming needs at affordable prices. This business has been running since January 1, 2021.</p>
+                </div>
+                <div class="image">
+                    <img src="Logo Business.jpg" alt="Business Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>- CONTACTS -</h2>
+        <p>Contact Me</p>
+
+        <div class="socials">
+            <p>#Follow ME</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/arnolt.ok?igsh=MWxraXkzejkxYXNydw%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sanssskuy_?_t=ZS-8uTePQhuzTT&_r=1"><i class="fab fa-tiktok"></i></a>
+                <a href="https://github.com/Arnolt-09"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/arnolt-arfa-nugraha-7451a8348"><i class="fab fa-linkedin"></i></a>
+                <a href="https://open.spotify.com/user/6icp1ou3fepy0prckhdrommbk?si=e7049b146d474865"><i class="fab fa-spotify"></i></a>
+                <a href="https://x.com/ryuuu_ft?s=11"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+
+
+                <div class="contact-form">
+                    <h3>Feel free to contact me</h3>
+                    
+                    <form action="send_mail.php" method="POST">
+                        <input type="text" name="nama" placeholder="Name | Required" required>
+                        <input type="email" name="email" placeholder="Email | Required" required>
+                        <textarea name="pesan" placeholder="Message | Required" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            
+            
+            </div>
+          
+           
+       
+        <footer>
+            <p>Arnolt</p>
+            <p>Copyright © 2025</p>
+        </footer>
+    </section>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                window.scrollTo({
+                    top: targetElement.offsetTop - 200, /* Sesuaikan offset jika navbar tinggi */
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
